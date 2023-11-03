@@ -10,9 +10,10 @@ Requirements
 Installation
 ------------
 
-Après avoir télécharger le projet, il faut installer launcer le scipt docker pour créer un container mysql et, après l'installation du container MySQL, créer les tables:
+Après avoir cloner le projet et installer les dépendances, il faut installer launcer le scipt docker pour créer un container mysql et, après l'installation du container MySQL, créer les tables:
 
 ```
+$ composer install
 $ docker compose up -d
 
 $ symfony console make:migration
